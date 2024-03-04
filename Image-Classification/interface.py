@@ -25,7 +25,6 @@ time_between = int(seconds * 1000)
 # Font used for the text label 
 font_tuple = ('Roboto', 14, 'bold')
 
-
 # Dictionary is used to avoid making repeated predictions for the same image (memoization)
 image_label_dict = {}
 
