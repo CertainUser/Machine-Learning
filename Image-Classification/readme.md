@@ -2,7 +2,7 @@
 
 Training and validation datasets were taken from https://www.kaggle.com/datasets/puneet6060/intel-image-classification.
 
-Download it and rename the dataset folder as 'intel_image_dataset'.
+Download the dataset, put it inside the project folder and rename it as 'intel_image_dataset'.
 
 'interface.py' file provides basic GUI to showcase the quality of predictions of the model.
 
