@@ -50,6 +50,3 @@ def get_image_and_pred_label(image_path, scale_factor=1.5):
     tk_image = ImageTk.PhotoImage(image.resize((int(image.width * scale_factor), int(image.height * scale_factor))))
     return tk_image, prediction 
 
-
-
-    
