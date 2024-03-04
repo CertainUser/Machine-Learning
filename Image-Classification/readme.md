@@ -7,7 +7,7 @@ Download the dataset, put it inside the project folder and rename it as 'intel_i
 'interface.py' file provides basic GUI to showcase the quality of predictions of the model.
 
 Follow along with the notebook file in this directory to create the model.
-I am open to discover new ways of how architecture of my model can be improved.
+I am open to discover ways of how architecture of my model can be improved.
 
 requirements.txt file contains libraries required to run the code files.
 
