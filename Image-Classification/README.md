@@ -4,12 +4,16 @@ _If you encounter issues with any of the files in this directory, feel free to s
 
 Training and validation datasets were taken from https://www.kaggle.com/datasets/puneet6060/intel-image-classification.
 
-Download the dataset, put it inside the project folder and rename it as 'intel_image_dataset'.
+#Instructions#
+- Clone this folder or the entire repository
 
-'interface.py' file provides basic GUI to showcase the quality of predictions of the model.
+- Run this command in the project's directory
+```
+pip3 install -r requirements.txt
+```
 
-Follow along with the notebook file in this directory to create the model.
-I am open to discover ways of how architecture of my model can be improved.
+- You can either follow along with the Jupyter notebook to train the model or make use of the 'classifier.keras' model in this folder.
 
-requirements.txt file contains libraries required to run the code files.
-
+- Run the 'interface.py' file to see how the model predicts labels for images. Make sure all of the above steps were taken.
+```
+python3 interface.py
