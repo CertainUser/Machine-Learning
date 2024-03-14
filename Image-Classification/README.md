@@ -20,7 +20,6 @@ Directory tree should look like this:
       ├── seg_test
       └── seg_train
 ...
-
 ```
 
 - Run this command in the project's directory
