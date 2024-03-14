@@ -30,7 +30,7 @@ Directory tree should look like this:
 ```
 
 - Run the following command in the project's directory to install dependencies:
-```zsh
+```bash
 pip3 install -r requirements.txt
 ```
 
@@ -38,5 +38,5 @@ pip3 install -r requirements.txt
 
 
 - Run 'interface.py' to see how the model predicts labels for images. Make sure all of the steps above were taken.
-```zsh
+```bash
 python3 interface.py
