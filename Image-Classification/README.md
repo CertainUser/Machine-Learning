@@ -11,12 +11,12 @@ Training and validation datasets were taken from https://www.kaggle.com/datasets
 - Clone this folder or the entire repository
 
 - Consider downloading mentioned dataset and putting it in this directory. Rename it as "intel_image_dataset".
-Dataset directory tree should look like this:
+Directory tree should look like this:
 ```
 ...
   ├── ...
   └── Image-Classification
-      ├── (other project files)
+      ├── other project files
       └── intel_image_dataset
           ├── seg_pred
           ├── seg_test
