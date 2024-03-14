@@ -1,6 +1,9 @@
 ## Convolutional neural network model to distinguish between 6 types of objects ##
 
-![Prediction example](https://github.com/LambdaKappa/Machine-Learning/assets/153376810/046c47fa-2181-439f-bac8-6858e764c1fc)
+
+<div style="text-align:center">
+    <img src="https://github.com/LambdaKappa/Machine-Learning/assets/153376810/046c47fa-2181-439f-bac8-6858e764c1fc" alt="Image">
+</div>
 
 
 _If you encounter issues with any of the files in this directory, feel free to send me a message._ 
