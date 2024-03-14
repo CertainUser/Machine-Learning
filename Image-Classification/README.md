@@ -19,7 +19,7 @@ Directory tree should look like this:
 ```Ruby
 ...
   ├── ...
-  └── Image-
+  └── Image-Classification
       ├── other_project_files
       └── intel_image_dataset
           ├── seg_pred
@@ -30,7 +30,7 @@ Directory tree should look like this:
 ```
 
 - Run the following command in the project's directory to install dependencies:
-```bash
+```.bash
 pip3 install -r requirements.txt
 ```
 
@@ -38,5 +38,5 @@ pip3 install -r requirements.txt
 
 
 - Run 'interface.py' to see how the model predicts labels for images. Make sure all of the steps above were taken.
-```bash
+```.ash
 python3 interface.py
