@@ -10,6 +10,19 @@ Training and validation datasets were taken from https://www.kaggle.com/datasets
 # Instructions #
 - Clone this folder or the entire repository
 
+- Consider downloading mentioned dataset and putting it into this directory. Rename the dataset as "intel_image_dataset".
+Directory tree should look like this:
+```
+...
+  │
+  ├── intel_image_dataset
+      ├── seg_pred
+      ├── seg_test
+      └── seg_train
+...
+
+```
+
 - Run this command in the project's directory
 ```
 pip3 install -r requirements.txt
