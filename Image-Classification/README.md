@@ -26,7 +26,7 @@ Directory tree should look like this:
 ...
 ```
 
-- Run this command in the project's directory
+- Run the following command in the project's directory:
 ```
 pip3 install -r requirements.txt
 ```
