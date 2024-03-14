@@ -3,7 +3,7 @@ from PIL import Image, ImageTk
 import tensorflow as tf
 
 # Load the model
-model = tf.keras.models.load_model('model.keras')
+model = tf.keras.models.load_model('tf_models/classification.keras')
 
 # Constants
 IMAGE_SIZE = model.layers[0].input_shape[1]
