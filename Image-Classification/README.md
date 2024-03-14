@@ -14,7 +14,7 @@ Training and validation datasets were taken from https://www.kaggle.com/datasets
 Dataset directory tree should look like this:
 ```
 ...
-  │
+  ├── ...
   └── intel_image_dataset
       ├── seg_pred
       ├── seg_test
