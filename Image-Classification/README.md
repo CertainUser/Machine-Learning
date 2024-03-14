@@ -22,6 +22,7 @@ Directory tree should look like this:
           ├── seg_pred
           ├── seg_test
           └── seg_train
+      ...
 ...
 ```
 
