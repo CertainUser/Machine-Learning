@@ -15,7 +15,7 @@ Dataset directory tree should look like this:
 ```
 ...
   │
-  ├── intel_image_dataset
+  └── intel_image_dataset
       ├── seg_pred
       ├── seg_test
       └── seg_train
