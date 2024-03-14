@@ -8,7 +8,7 @@ _If you encounter issues with any of the files in this directory, feel free to s
 Training and validation datasets were taken from https://www.kaggle.com/datasets/puneet6060/intel-image-classification.
 
 # Instructions #
-- Clone this folder or the entire repository
+- Clone this folder or the entire repository.
 
 - Consider downloading mentioned dataset and putting it in this directory. Rename it as "intel_image_dataset".
 
