@@ -16,10 +16,10 @@ Training and validation datasets were taken from https://www.kaggle.com/datasets
 - Consider downloading mentioned dataset and putting it in this directory. Rename it as "intel_image_dataset".
 
 Directory tree should look like this:
-```JavaScript
+```Ruby
 ...
   ├── ...
-  └── Image-Classification
+  └── Image-
       ├── other_project_files
       └── intel_image_dataset
           ├── seg_pred
@@ -30,7 +30,7 @@ Directory tree should look like this:
 ```
 
 - Run the following command in the project's directory to install dependencies:
-```
+```Python
 pip3 install -r requirements.txt
 ```
 
@@ -38,5 +38,5 @@ pip3 install -r requirements.txt
 
 
 - Run 'interface.py' to see how the model predicts labels for images. Make sure all of the steps above were taken.
-```
+```Python
 python3 interface.py
