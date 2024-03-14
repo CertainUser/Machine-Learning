@@ -1,5 +1,10 @@
-numpy
-tensorflow
-pillow
-scipy
-tkinter
+importlib_resources==6.1.2
+ipykernel==6.29.3
+ipython==8.22.1
+ipywidgets==8.1.2
+keras==2.15.0
+numpy==1.26.4
+pillow==10.2.0
+scipy==1.12.0
+tensorflow==2.15.0.post1
+tk==0.1.0
