@@ -30,6 +30,6 @@ pip3 install -r requirements.txt
 - You can either follow along with the Jupyter notebook to train the model or make use of the 'classifier.keras' model in this folder.
 
 
-- Run the 'interface.py' file to see how the model predicts labels for images. Make sure all of the above steps were taken.
+- Run 'interface.py' to see how the model predicts labels for images. Make sure all of the above steps were taken.
 ```
 python3 interface.py
