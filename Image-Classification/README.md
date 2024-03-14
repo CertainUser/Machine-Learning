@@ -10,8 +10,8 @@ Training and validation datasets were taken from https://www.kaggle.com/datasets
 # Instructions #
 - Clone this folder or the entire repository
 
-- Consider downloading mentioned dataset and putting it in this directory. Rename the dataset as "intel_image_dataset".
-Directory tree should look like this:
+- Consider downloading mentioned dataset and putting it in this directory. Rename it as "intel_image_dataset".
+Dataset directory tree should look like this:
 ```
 ...
   │
