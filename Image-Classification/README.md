@@ -16,7 +16,7 @@ Training and validation datasets were taken from https://www.kaggle.com/datasets
 - Consider downloading mentioned dataset and putting it in this directory. Rename it as "intel_image_dataset".
 
 Directory tree should look like this:
-```Ruby
+```bash
 ...
   ├── ...
   └── Image-Classification
