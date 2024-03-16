@@ -10,4 +10,4 @@ It currently includes a single C++ file to test some of the operator overloading
 
 for a variable class as well as to try different ways to store function gradients.
 
-I will make this the part of my Linear Algebra library.
+I might make this the part of my Linear Algebra library or at least provide some basic compatibility with it.
