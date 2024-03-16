@@ -1,8 +1,13 @@
 # Description #
 
-My newest project I decided to start working on because I wanted to understand better
-how automatic differentiation in frameworks like 'PyTorch' works. I am planning to turn it 
-into a Machine Learning library in the future.
+My newest project I decided to start working on because I wanted to
 
-It currently includes a single C++ file to test some of the operator overloadings 
-for a class representing variable. I will make this the part of my linear algebra library.
+understand better how automatic differentiation in frameworks like 'PyTorch' works. 
+
+I am planning to turn it into a Machine Learning library in the future.
+
+It currently includes a single C++ file to test some of the operator overloadings
+
+for a variable class as well as to try different ways to store function gradients.
+
+I will make this the part of my Linear Algebra library.
