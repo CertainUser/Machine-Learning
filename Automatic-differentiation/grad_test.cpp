@@ -1,6 +1,8 @@
 #include <iostream>
 #include <unordered_map>
 #include <initializer_list>
+#include <vector>
+#include <algorithm>
 
 typedef std::unordered_map<std::string, double> d_map;
 
@@ -54,7 +56,7 @@ public:
 
 
         for (const auto& [df, value]: this->grad) {
-            new_grad[df] += 1; 
+            new_grad[df] += value; 
         }        
 
         // Iterate through the derivatives of the 'other' variable
@@ -65,13 +67,57 @@ public:
         return Variable(new_value, getNewName(), new_grad);
     }
 
+    Variable operator*(Variable& other) {
+        double new_value = this->value * other.value;
+        
+        if (other.isConstant) {
+            d_map new_grad = this->grad;
+            for (const auto& [df, value]: new_grad) {
+                new_grad[df] *= other.value;
+            }
+            new_grad[this->name] = other.value;
+
+            return Variable(new_value, getNewName(), new_grad);
+        }
+        d_map new_grad = d_map();
+
+        new_grad[this->name] = other.value;
+        new_grad[other.name] = this->value;
+
+        std::vector<std::string> storedNames;
+        storedNames.reserve(this->grad.size() + other.grad.size());
+
+        for (const auto& [df, value]: this->grad) {
+            new_grad[df] += other.value * value + this->value * other.grad[df];
+            storedNames.emplace_back(df);
+        }
+
+        for (const auto& [df, value]: other.grad) {
+            if (std::count(storedNames.begin(), storedNames.end(), df) != 0) continue;
+            new_grad[df] += this->value * value;
+        }
+        return Variable(new_value, getNewName(), new_grad);
+    }
+
+    Variable operator*(const double& other) {
+        double new_value = this->value * other;
+        d_map new_grad = this->grad;
+        
+        for (const auto& [df, value]: new_grad) {
+            new_grad[df] *= other;
+        }
+        new_grad[this->name] = other;
+
+        return Variable(new_value, getNewName(), new_grad);
+    }
+
     Variable operator+(const double& constant) {
         double new_value = this->value + constant;
         d_map new_grad = this->grad;
         new_grad[this->name] = 1.0;
         return Variable(new_value, getNewName(), new_grad);
     }
-
+    
     // Creates a new variable
     Variable operator-() {
         double new_value = -this->value;
@@ -132,12 +178,11 @@ namespace diff {
 }
 
 int main() {
-    Variable x = Variable(5, "x");
-    Variable y = Variable(7, "y");
-    auto a = diff::Constant(16.5);
+    Variable x(4, "x");
+    Variable y(2, "y");
+    auto v_1 = x + y;
+    auto v_2 = v_1 * y;
 
-    Variable v_1 = y + x;
-    Variable v_2 = add({v_1, x, a});
     v_1.Grad();
     v_2.Grad();
 
